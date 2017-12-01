@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Camera</string>
+    <string name="switch_camera">switch</string>
+    <string name="success">Successfully saved</string>
+    <string name="failed">Failed to saved</string>
+    <string name="permission">Did not get the necessary permissions</string>
+</resources>

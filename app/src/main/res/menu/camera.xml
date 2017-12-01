@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mSwitchCamera"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@mipmap/icon_refresh"
+        android:title="@string/switch_camera"/>
+</menu>
