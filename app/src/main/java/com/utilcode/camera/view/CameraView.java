@@ -26,6 +26,7 @@ import com.utilcode.camera.controller.TextureController;
 import com.utilcode.camera.filter.AFilter;
 import com.utilcode.camera.filter.Beauty;
 import com.utilcode.camera.filter.LookupFilter;
+import com.utilcode.camera.ifs.Renderer;
 
 import java.io.IOException;
 import java.util.Arrays;
@@ -46,7 +47,7 @@ public class CameraView extends SurfaceView {
     private LookupFilter mLookupFilter;
     private Beauty mBeautyFilter;
     private TextureController mController;
-    private com.utilcode.camera.ifs.Renderer mRenderer;
+    private Renderer mRenderer;
     private String[] images = {"","purity.png","amatorka.png","clearLookup.jpg","highkey.png","peachLookup.jpg","purityLookup.png","ruddyLookup.jpg"};
 
     public CameraView(Context context) {
@@ -160,7 +161,7 @@ public class CameraView extends SurfaceView {
         return images.length;
     }
 
-    private class Camera1Renderer implements com.utilcode.camera.ifs.Renderer {
+    private class Camera1Renderer implements Renderer {
         private Camera mCamera;
 
         @Override
@@ -214,7 +215,7 @@ public class CameraView extends SurfaceView {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private class Camera2Renderer implements com.utilcode.camera.ifs.Renderer {
+    private class Camera2Renderer implements Renderer {
 
         CameraDevice mDevice;
         CameraManager mCameraManager;
